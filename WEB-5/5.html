@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Not a Real CRM</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="5.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <div class="comp1">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Catalog</a></li>
+        <li><a href="#">Inventory</a></li>
+      </ul>
+    </div>
+    <div class="comp2">
+      <h1>!aCRM</h1>
+    </div>
+    <div class="comp3">
+      <ul>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Evaluation Copies</a></li>
+      </ul>
+    </div>
+    <div>
+      <figure>
+        <img src="#" />
+        <figcaption>Aneesh M Bhat</figcaption>
+      </figure>
+    </div>
+    <div>
+      <h3>Personal Details</h3>
+      <p>
+        Address: 1 Microsoft Way<br />
+        City: Redmond <br />
+        Region: WA<br />Country: USA <br />
+        Postal: 98052-8300
+      </p>
+      <button>Edit</button>
+      <button>Flag</button>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>
+        Phone: 12345-67890 <br />
+        Email: xxxxxxxxxxx@gmail.com
+      </p>
+      <button>Edit</button>
+      <button>Flag</button>
+    </div>
+    <div>
+      <h3>Sales Activity</h3>
+
+      <div id="myPlot" style="width: 100%; max-width: 700px"></div>
+      <script>
+        var xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yArray = [55, 49, 44, 24, 15];
+
+        var data = [
+          {
+            x: xArray,
+            y: yArray,
+            type: "bar",
+          },
+        ];
+
+        var layout = { title: "World Wide Wine Production" };
+
+        Plotly.newPlot("myPlot", data, layout);
+      </script>
+    </div>
+    <div>
+      <p>
+        <a href="#">Home</a> | <a href="#">Catalog</a> |
+        <a href="#">Inventory</a>
+      </p>
+      <p>Copyright &copy; Not a Real CRM</p>
+    </div>
+  </body>
+</html>
